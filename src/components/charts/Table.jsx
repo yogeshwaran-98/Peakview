@@ -32,7 +32,7 @@ const Table = ({ data, title }) => {
           <input
             type="text"
             placeholder={`Search ${title}`}
-            className="bg-gray-700 text-white placeholder-gray-400 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="bg-gray-700 text-white  w-28 md:w-64 placeholder-gray-400 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             onChange={handleSearch}
             value={searchTerm}
             style={{
