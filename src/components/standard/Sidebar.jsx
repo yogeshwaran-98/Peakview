@@ -28,13 +28,14 @@ const SIDEBAR_ITEMS = [
 ];
 
 const Sidebar = () => {
+   const isMobile = window.innerWidth < 768;
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   return (
     <motion.div
       className={`z-10 transition-all duration-300 ease-in-out shrink-0 ${
         isSidebarOpen ? "w-64" : "w-20"
       } `}
-      animate={{ width: isSidebarOpen ? 256 : 80 }}
+      animate={{ width: isSidebarOpen  ? (isMobile ? 600 : 256) : 80 }}
     >
       <div
         className="h-full bg-gray-800 bg-opacity-50 backdrop-blur-md p-4 flex flex-col border-r "
