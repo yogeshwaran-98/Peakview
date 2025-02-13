@@ -67,6 +67,7 @@ const Sidebar = () => {
                       animate={{ opacity: 1, width: "auto" }}
                       exit={{ opacity: 0, width: 0 }}
                       transition={{ duration: 0.1, delay: 0.3 }}
+                       onClick={() => setIsSidebarOpen(false)}
                     >
                       {item.name}
                     </motion.span>
